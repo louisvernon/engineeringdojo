@@ -1,4 +1,4 @@
 language: python
 
 script:
-   - cd src && cmake . && ctest --output-on-failure 
+   - cd src && cmake . && export PYTHONPATH=$PYTHONPATH:$PWD && ctest --output-on-failure 
