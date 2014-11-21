@@ -1,4 +1,4 @@
 language: python
 
 script:
-   - cd src && cmake . && ctest
+   - cd src && cmake . && ctest --output-on-failure 
